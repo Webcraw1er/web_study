@@ -3,29 +3,70 @@
       <title> html- HTML </title>
       <meta charset= "utf-8">
       <style>
-        
+        #firstgrid a{
+          color: rgb(0, 255, 180);
+        }
+        #firstgrid{
+          display:grid;
+          grid-template-columns: 1fr 1fr;
+        }
+        #secondgrid{
+          display:grid;
+          grid-template-columns: 500px 240px 1fr;
+        }
+        @media(max-width: 600px){
+          #firstgrid{display:block;}
+          #secondgrid{display:block;}
+        }
       </style>
   </head>
 
   <body>
-    <h1><a href="index.html">WEB</a></h1>
-    <ol>
-      <li> <a href="1.html" title= "html"><u>HTML</u></a></li>
-      <li> <a href="2.html" title= "css"><u>CSS</u></a> </li>
-      <li> <a href="3.html" title= "Javascript"><u>Javascript</u></a></li>
-    </ol>
-
-    <h2><a name="title" style="black">HTML</h2></a>
-    <p>
-    hello webesfweF<br>
-    <a href="#bookmark1">to title 1</a><br>
-    <a href="#bookmark2">to title 2</a><br>
-    <a href="#bookmark3">to title 3</a><br>
-    <a href="#bookmark4">to title 4</a><br>
-    <a href="#bookmark5">to title 5</a><br>
-
-    <strong>My name is <u>Justin</strong></u></p>
-    <p>I, Justin have a dream</p>
+    <div id="firstgrid" style="border-bottom: blue solid 10px; padding-bottom:0px">
+      <h1><a href="index.html" style="font-size:600%; text-decoration:none; padding-left: 100px; padding-bottom:0px">WEB</a></h1>
+      <div style="margin:50px">
+        <div>INDEX&gt;&gt;</div>
+        <ol style="margin-top:20px; margin-bottom: 50px; border-left: solid blue 3px; padding-left:70px; padding-bottom:0px">
+          <li> <a href="1.html" title= "html" style= "font-size:250%"><u>HTML</u></a></li>
+          <li> <a href="2.html" title= "css" style= "font-size:250%"><u>CSS</u></a> </li>
+          <li> <a href="3.html" title= "Javascript" style= "font-size:250%"><u>Javascript</u></a></li>
+        </ol>
+      </div>
+    </div>
+    <div id="secondgrid" style="margin-top: 30px">
+      <div style="margin-left:50px; padding-bottom:0">
+        <div><a name="title">You are now in...</div></a>
+        <h2 style="color:lime; font-size:400%; margin-top:20px; padding-bottom:0">HTML</h2>
+      </div>
+      <div style="margin-left:40px; border-left: blue 5px solid; border-right: blue 5px solid; padding-left:10px; padding-right:20px">
+        <div style="color: cyan">Color mode:</div><br>
+          <input type="button" value="night" id="nightday" onclick="
+            document.querySelector('body').style.backgroundColor='black';
+            document.querySelector('body').style.color='white'
+            ">
+          <input type="button" value="day" id="nightday" onclick="
+            document.querySelector('body').style.backgroundColor='white';
+            document.querySelector('body').style.color='black'
+            ">
+      </div>
+      <div style="padding:40px">
+        <div>shortcuts</div>
+        <a href="#bookmark1">to title 1</a><br>
+        <a href="#bookmark2">to title 2</a><br>
+        <a href="#bookmark3">to title 3</a><br>
+        <a href="#bookmark4">to title 4</a><br>
+        <a href="#bookmark5">to title 5</a><br>
+      </div>
+    </div>
+    <p style="border-bottom:cyan solid 3px; padding-bottom: 20px; border-top:cyan solid 3px; padding-top: 20px">
+    하이퍼 텍스트 마크업 언어(영어: Hyper Text Markup Language, HTML, 문화어: 초본문표식달기언어, 하이퍼본문표식달기언어)는
+    웹 페이지를 위한 지배적인 마크업 언어다. 또한, HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는 것뿐만
+     아니라 링크, 인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을 제공한다. 그리고 이미지와 객체를 내장하고 대화형
+     양식을 생성하는 데 사용될 수 있다. HTML은 웹 페이지 콘텐츠 안의 꺾쇠 괄호에 둘러싸인 "태그"로 되어있는 HTML 요소 형태로
+     작성한다. HTML은 웹 브라우저와 같은 HTML 처리 장치의 행동에 영향을 주는 자바스크립트와 본문과 그 밖의 항목의 외관과 배치를
+     정의하는 CSS 같은 스크립트를 포함하거나 불러올 수 있다. HTML과 CSS 표준의 공동 책임자인 W3C는 명확하고 표상적인 마크업을
+     위하여 CSS의 사용을 권장한다.[1]
+   </p>
     <a name="bookmark1"><p><h1>title 1</h1></a>aghjsadg<br>abwakjw<br>arwq w<br><a href="#title"><u>To title</u></a></p><br>
     <a name="bookmark2"><p><h1>title 2</h1></a>aghjsadg<br>abwakjw<br>arwq w<br><a href="#title"><u>To title</u></a></p><br>
     <a name="bookmark3"><p><h1>title 3</h1></a>aghjsadg<br>abwakjw<br>arwq w<br><a href="#title"><u>To title</u></a></p><br>

@@ -3,23 +3,41 @@
       <title> index- HTML </title>
       <meta charset= "utf-8">
       <style>
-
+      a{
+        color: rgb(0, 255, 180);
+      }
+      #firstgrid{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+      }
       </style>
   </head>
 
   <body>
-    <h1><a href="index.html">WEB</a></h1>
-    <ol>
-      <li> <a href="1.html" title= "html"><u>HTML</u></a></li>
-      <li> <a href="2.html" title= "css"><u>CSS</u></a> </li>
-      <li> <a href="3.html" title= "Javascript"><u>Javascript</u></a></li>
-    </ol>
-    <p>by the way if you want the page to be opened in a blank page, write target="_blank" in the &lt;a&gt;
-    <br>for further explanation click the following link &gt;&gt;<a href="https://m.blog.naver.com/wolfre/220319783903" target="_blank">click</a>&lt;&lt;</p>
+    <div id="firstgrid">
+      <h1><a href="index.html" style="font-size:600%; text-decoration:none; padding-left: 100px">WEB</a></h1>
+      <div style="margin:50px">
+        <div>INDEX&gt;&gt;</div>
+        <ol style="margin-top:20px; margin-bottom: 50px; border-left: solid blue 3px; padding-left:70px">
+          <li> <a href="1.html" title= "html" style= "font-size:250%"><u>HTML</u></a></li>
+          <li> <a href="2.html" title= "css" style= "font-size:250%"><u>CSS</u></a> </li>
+          <li> <a href="3.html" title= "Javascript" style= "font-size:250%"><u>Javascript</u></a></li>
+        </ol>
+      </div>
+    </div>
     <image src= "test.jpg" width="30%">
-
-      <h2><a name="title" style="black">This is the top of the page</h2></a>
       <p>
+
+        <input type="button" value="night" id="nightday" onclick="
+          document.querySelector('body').style.backgroundColor='black';
+          document.querySelector('body').style.color='white'
+          ">
+        <input type="button" value="day" id="nightday" onclick="
+          document.querySelector('body').style.backgroundColor='white';
+          document.querySelector('body').style.color='black'
+          ">
+
+      <br><br>
       hello webesfweF<br>
       <a href="#bookmark1">to title 1</a><br>
       <a href="#bookmark2">to title 2</a><br>

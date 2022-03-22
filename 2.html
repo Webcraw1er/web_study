@@ -3,29 +3,68 @@
       <title> css- HTML </title>
       <meta charset= "utf-8">
       <style>
-        
+        #firstgrid a{
+          color: rgb(0, 255, 180);
+        }
+        #firstgrid{
+          display:grid;
+          grid-template-columns: 1fr 1fr;
+        }
+        #secondgrid{
+          display:grid;
+          grid-template-columns: 500px 240px 1fr;
+        }
+        @media(max-width: 600px){
+          #firstgrid{display:block;}
+          #secondgrid{display:block;}
+        }
       </style>
   </head>
 
   <body>
-    <h1><a href="index.html">WEB</a></h1>
-    <ol>
-      <li> <a href="1.html" title= "html"><u>HTML</u></a></li>
-      <li> <a href="2.html" title= "css"><u>CSS</u></a> </li>
-      <li> <a href="3.html" title= "Javascript"><u>Javascript</u></a></li>
-    </ol>
+    <div id="firstgrid" style="border-bottom: blue solid 10px; padding-bottom:0px">
+      <h1><a href="index.html" style="font-size:600%; text-decoration:none; padding-left: 100px; padding-bottom:0px">WEB</a></h1>
+      <div style="margin:50px">
+        <div>INDEX&gt;&gt;</div>
+        <ol style="margin-top:20px; margin-bottom: 50px; border-left: solid blue 3px; padding-left:70px; padding-bottom:0px">
+          <li> <a href="1.html" title= "html" style= "font-size:250%"><u>HTML</u></a></li>
+          <li> <a href="2.html" title= "css" style= "font-size:250%"><u>CSS</u></a> </li>
+          <li> <a href="3.html" title= "Javascript" style= "font-size:250%"><u>Javascript</u></a></li>
+        </ol>
+      </div>
+    </div>
+    <div id="secondgrid" style="margin-top: 30px">
+      <div style="margin-left:50px; padding-bottom:0">
+        <div><a name="title">You are now in...</div></a>
+        <h2 style="color:lime; font-size:400%; margin-top:20px; padding-bottom:0">HTML</h2>
+      </div>
+      <div style="margin-left:40px; border-left: blue 5px solid; border-right: blue 5px solid; padding-left:10px; padding-right:20px">
+        <div style="color: cyan">Color mode:</div><br>
+          <input type="button" value="night" id="nightday" onclick="
+            document.querySelector('body').style.backgroundColor='black';
+            document.querySelector('body').style.color='white'
+            ">
+          <input type="button" value="day" id="nightday" onclick="
+            document.querySelector('body').style.backgroundColor='white';
+            document.querySelector('body').style.color='black'
+            ">
+      </div>
+      <div style="padding:40px">
+        <div>shortcuts</div>
+        <a href="#bookmark1">to title 1</a><br>
+        <a href="#bookmark2">to title 2</a><br>
+        <a href="#bookmark3">to title 3</a><br>
+        <a href="#bookmark4">to title 4</a><br>
+        <a href="#bookmark5">to title 5</a><br>
+      </div>
+    </div>
 
-    <h2><a name="title" style="black">CSS</h2></a>
-    <p>
-    hello webesfweF<br>
-    <a href="#bookmark1">to title 1</a><br>
-    <a href="#bookmark2">to title 2</a><br>
-    <a href="#bookmark3">to title 3</a><br>
-    <a href="#bookmark4">to title 4</a><br>
-    <a href="#bookmark5">to title 5</a><br>
+    <p style="border-bottom:cyan solid 3px; padding-bottom: 20px; border-top:cyan solid 3px; padding-top: 20px">
+    종속형 시트 또는 캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)는 마크업 언어가 실제 표시되는 방법을 기술하는
+    스타일 언어(style sheet language)로[1], HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과
+     스타일을 정의할 때의 자유도가 높다.
+   </p>
 
-    <strong>My name is <u>Justin</strong></u></p>
-    <p>I, Justin have a dream</p>
     <a name="bookmark1"><p><h1>title 1</h1></a>aghjsadg<br>abwakjw<br>arwq w<br><a href="#title"><u>To title</u></a></p><br>
     <a name="bookmark2"><p><h1>title 2</h1></a>aghjsadg<br>abwakjw<br>arwq w<br><a href="#title"><u>To title</u></a></p><br>
     <a name="bookmark3"><p><h1>title 3</h1></a>aghjsadg<br>abwakjw<br>arwq w<br><a href="#title"><u>To title</u></a></p><br>
