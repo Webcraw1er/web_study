@@ -11,6 +11,21 @@
         grid-template-columns: 1fr 1fr;
       }
       </style>
+      <script>
+      function nightdaytoggler(self){
+        var target = document.querySelector('body');
+        if(self.value=== 'night'){
+          target.style.backgroundColor="white";
+          target.style.color="black";
+          self.value='day';
+        }
+        else{
+          target.style.backgroundColor='black';
+          target.style.color='white';
+          self.value='night';
+          }
+        }
+      </script>
   </head>
 
   <body>
@@ -25,32 +40,24 @@
         </ol>
       </div>
     </div>
-    <image src= "test.jpg" width="30%">
+    <image src= "web.jpeg" width="120%">
       <p>
-
-        <input type="button" value="night" id="nightday" onclick="
-          document.querySelector('body').style.backgroundColor='black';
-          document.querySelector('body').style.color='white'
-          ">
         <input type="button" value="day" id="nightday" onclick="
-          document.querySelector('body').style.backgroundColor='white';
-          document.querySelector('body').style.color='black'
+          nightdaytoggler(this);
           ">
 
-      <br><br>
-      hello webesfweF<br>
-      <a href="#bookmark1">to title 1</a><br>
-      <a href="#bookmark2">to title 2</a><br>
-      <a href="#bookmark3">to title 3</a><br>
-      <a href="#bookmark4">to title 4</a><br>
-      <a href="#bookmark5">to title 5</a><br>
+          <div strong style="font-size: 30px; text-decoration: underline">웹의 다른 뜻은 다음과 같다.</div>
+          <ul>
+            <li>웹(web)은 기본적으로 거미줄을 뜻한다.</li>
+            <li>월드 와이드 웹(World Wide Web)의 약자</li>
+            <li>월드와이드웹: 세계 최초의 웹 브라우저</li>
+            <li>웹 2.0, 웹 3.0</li>
+            <li>웹사이트(website)</li>
+            <li>웹(WEB)은 도널드 커누스가 제안한 프로그래밍 시스템이다.</li>
+            <li>웹(Web)은 그놈 데스크톱의 웹 브라우저이다.</li>
+            <li>월간 웹은 1998년 창간된 월간지이다.</li>
+          </ul>
 
-      <strong>My name is <u>Justin</strong></u></p>
-      <p>I, Justin have a dream</p>
-      <a name="bookmark1"><p><h1>title 1</h1></a>aghjsadg<br>abwakjw<br>arwq w<br><a href="#title"><u>To title</u></a></p><br>
-      <a name="bookmark2"><p><h1>title 2</h1></a>aghjsadg<br>abwakjw<br>arwq w<br><a href="#title"><u>To title</u></a></p><br>
-      <a name="bookmark3"><p><h1>title 3</h1></a>aghjsadg<br>abwakjw<br>arwq w<br><a href="#title"><u>To title</u></a></p><br>
-      <a name="bookmark4"><p><h1>title 4</h1></a>aghjsadg<br>abwakjw<br>arwq w<br><a href="#title"><u>To title</u></a></p><br>
-      <a name="bookmark5"><p><h1>title 5</h1></a>aghjsadg<br>abwakjw<br>arwq w<br><a href="#title"><u>To title</u></a></p><br>
+
       <body>
 </html>
